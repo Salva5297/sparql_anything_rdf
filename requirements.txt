@@ -1,0 +1,29 @@
+# Core RDF processing dependencies
+rdflib>=6.0.0
+SPARQLWrapper>=2.0.0
+
+# HTTP requests for remote RDF resources
+requests>=2.25.0
+
+# JSON-LD support
+PyLD>=2.0.3
+
+# XML processing for RDF/XML
+lxml>=4.6.0
+
+# Additional RDF format support
+rdflib-jsonld>=0.6.0
+
+# Utilities
+python-dateutil>=2.8.0
+urllib3>=1.26.0
+
+# Optional: Performance improvements
+cython>=0.29.0
+
+# Development dependencies (optional)
+# pytest>=6.0
+# pytest-cov>=2.0
+# black>=21.0
+# flake8>=3.8
+# mypy>=0.800

@@ -1,0 +1,181 @@
+@prefix xml1: <https://w3id.org/def/sparql_anything/xml/> .
+@prefix xml_res: <http://example.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+xml_res:root a <http://library.example.org#library>,
+        xml1:Element ;
+    xml1:hasChild xml_res:child_record_27,
+        xml_res:child_record_3 ;
+    xml1:hasNamespace xml_res:namespace_1 ;
+    xml1:hasTag "library"^^xsd:string .
+
+xml_res:attr_isbn_29 a xml1:Attribute ;
+    xml1:attribute "isbn"^^xsd:string ;
+    xml1:hasText "978-9876543210"^^xsd:string .
+
+xml_res:attr_isbn_5 a xml1:Attribute ;
+    xml1:attribute "isbn"^^xsd:string ;
+    xml1:hasText "978-0123456789"^^xsd:string .
+
+xml_res:child_author_11 xml1:child xml_res:element_author_10 .
+
+xml_res:child_author_35 xml1:child xml_res:element_author_34 .
+
+xml_res:child_genre_23 xml1:child xml_res:element_genre_22 .
+
+xml_res:child_genre_47 xml1:child xml_res:element_genre_46 .
+
+xml_res:child_publisher_15 xml1:child xml_res:element_publisher_14 .
+
+xml_res:child_publisher_39 xml1:child xml_res:element_publisher_38 .
+
+xml_res:child_record_27 xml1:child xml_res:element_record_26 .
+
+xml_res:child_record_3 xml1:child xml_res:element_record_2 .
+
+xml_res:child_title_31 xml1:child xml_res:element_title_30 .
+
+xml_res:child_title_7 xml1:child xml_res:element_title_6 .
+
+xml_res:child_year_19 xml1:child xml_res:element_year_18 .
+
+xml_res:child_year_43 xml1:child xml_res:element_year_42 .
+
+xml_res:element_author_10 a <http://library.example.org/book#author>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_12 ;
+    xml1:hasTag "author"^^xsd:string ;
+    xml1:hasText xml_res:text_13 .
+
+xml_res:element_author_34 a <http://library.example.org/book#author>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_36 ;
+    xml1:hasTag "author"^^xsd:string ;
+    xml1:hasText xml_res:text_37 .
+
+xml_res:element_genre_22 a <http://library.example.org/book#genre>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_24 ;
+    xml1:hasTag "genre"^^xsd:string ;
+    xml1:hasText xml_res:text_25 .
+
+xml_res:element_genre_46 a <http://library.example.org/book#genre>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_48 ;
+    xml1:hasTag "genre"^^xsd:string ;
+    xml1:hasText xml_res:text_49 .
+
+xml_res:element_publisher_14 a <http://library.example.org/book#publisher>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_16 ;
+    xml1:hasTag "publisher"^^xsd:string ;
+    xml1:hasText xml_res:text_17 .
+
+xml_res:element_publisher_38 a <http://library.example.org/book#publisher>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_40 ;
+    xml1:hasTag "publisher"^^xsd:string ;
+    xml1:hasText xml_res:text_41 .
+
+xml_res:element_record_2 a <http://library.example.org/book#record>,
+        xml1:Element ;
+    xml1:hasAttribute xml_res:attr_isbn_5 ;
+    xml1:hasChild xml_res:child_author_11,
+        xml_res:child_genre_23,
+        xml_res:child_publisher_15,
+        xml_res:child_title_7,
+        xml_res:child_year_19 ;
+    xml1:hasNamespace xml_res:namespace_4 ;
+    xml1:hasTag "record"^^xsd:string .
+
+xml_res:element_record_26 a <http://library.example.org/book#record>,
+        xml1:Element ;
+    xml1:hasAttribute xml_res:attr_isbn_29 ;
+    xml1:hasChild xml_res:child_author_35,
+        xml_res:child_genre_47,
+        xml_res:child_publisher_39,
+        xml_res:child_title_31,
+        xml_res:child_year_43 ;
+    xml1:hasNamespace xml_res:namespace_28 ;
+    xml1:hasTag "record"^^xsd:string .
+
+xml_res:element_title_30 a <http://library.example.org/book#title>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_32 ;
+    xml1:hasTag "title"^^xsd:string ;
+    xml1:hasText xml_res:text_33 .
+
+xml_res:element_title_6 a <http://library.example.org/book#title>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_8 ;
+    xml1:hasTag "title"^^xsd:string ;
+    xml1:hasText xml_res:text_9 .
+
+xml_res:element_year_18 a <http://library.example.org/book#year>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_20 ;
+    xml1:hasTag "year"^^xsd:string ;
+    xml1:hasText xml_res:text_21 .
+
+xml_res:element_year_42 a <http://library.example.org/book#year>,
+        xml1:Element ;
+    xml1:hasNamespace xml_res:namespace_44 ;
+    xml1:hasTag "year"^^xsd:string ;
+    xml1:hasText xml_res:text_45 .
+
+xml_res:namespace_1 xml1:namespace "http://library.example.org"^^xsd:anyURI .
+
+xml_res:namespace_12 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_16 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_20 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_24 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_28 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_32 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_36 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_4 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_40 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_44 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_48 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:namespace_8 xml1:namespace "http://library.example.org/book"^^xsd:anyURI .
+
+xml_res:text_13 a xml1:Text ;
+    xml1:text "Jane Smith"^^xsd:string .
+
+xml_res:text_17 a xml1:Text ;
+    xml1:text "Tech Publications"^^xsd:string .
+
+xml_res:text_21 a xml1:Text ;
+    xml1:text "2023"^^xsd:string .
+
+xml_res:text_25 a xml1:Text ;
+    xml1:text "Programming"^^xsd:string .
+
+xml_res:text_33 a xml1:Text ;
+    xml1:text "Advanced Data Structures"^^xsd:string .
+
+xml_res:text_37 a xml1:Text ;
+    xml1:text "Bob Wilson"^^xsd:string .
+
+xml_res:text_41 a xml1:Text ;
+    xml1:text "Academic Press"^^xsd:string .
+
+xml_res:text_45 a xml1:Text ;
+    xml1:text "2022"^^xsd:string .
+
+xml_res:text_49 a xml1:Text ;
+    xml1:text "Computer Science"^^xsd:string .
+
+xml_res:text_9 a xml1:Text ;
+    xml1:text "Introduction to Python Programming"^^xsd:string .
+
